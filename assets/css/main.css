@@ -71,6 +71,21 @@ body::before {
   bottom: 0;
 }
 
+/* Hero Section Logo */
+.hero-logo {
+  max-width: 250px; /* Adjust based on your logo size */
+  margin-bottom: 20px; /* Space between logo and heading */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 190px; /* Adjust for smaller screens */
+    margin-bottom: 15px;
+  }
+}
+
+
 @media (min-width: 1366px) {
   body {
     background-attachment: fixed;
