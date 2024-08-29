@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #120148;
     padding-bottom: 60px; /* Prevent content from being hidden under the fixed navbar */
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #7BC9FF;
     padding: 16px;
     display: flex;
     justify-content: space-between;
@@ -19,6 +19,8 @@ header {
 h1 {
     font-size: 24px;
     margin: 0;
+    color: #180161;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .search-icon img {
@@ -38,6 +40,7 @@ section {
 h2 {
     font-size: 20px;
     margin-bottom: 16px;
+    color: white;
 }
 
 /* Horizontal Scroll / Carousel */
@@ -59,7 +62,7 @@ h2 {
     min-width: 250px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     text-align: center;
-    background-color: peachpuff;
+    background-color: #F8F9D7;
     margin-bottom: 10px;
 }
 
@@ -110,7 +113,7 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 5px;
-    background-color: rgb(48, 184, 138);
+    background-color: #7BC9FF;
 }
 
 .category-card img {
@@ -127,7 +130,8 @@ nav {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: #ffffff;
+    padding-top: 5px;
+    background-color: #7BC9FF;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* Keeps the navbar above other content */
     transition: none; /* Disable any transition that might cause minimization */
@@ -166,7 +170,7 @@ nav ul li a img {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 5px;
-    background-color: rgb(48, 184, 138);
+    background-color: #7BC9FF;
 }
 
 .category-card-2 img {
