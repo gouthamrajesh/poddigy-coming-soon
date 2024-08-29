@@ -1,8 +1,10 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    padding-bottom: 60px; /* Prevent content from being hidden under the fixed navbar */
 }
 
 header {
@@ -38,22 +40,30 @@ h2 {
     margin-bottom: 16px;
 }
 
+/* Horizontal Scroll / Carousel */
 .horizontal-scroll {
     display: flex;
     overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
 }
 
-.card, .category-card {
+.horizontal-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.card {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 16px;
     margin-right: 16px;
-    min-width: 150px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     text-align: center;
+    background-color: peachpuff;
+    margin-bottom: 10px;
 }
 
-.card img, .category-card img {
+.card img {
     width: 100%;
     height: auto;
     max-width: 100%;
@@ -62,23 +72,67 @@ h2 {
     object-fit: cover;
 }
 
-.category-card p {
-    margin: 0;
-    padding-top: 8px;
+.card h3
+{
+    margin-top: 2px;
+    font-size: 17px;
+    margin-bottom: -5px;
 }
 
-.categories-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+.card p
+{
+    margin-bottom: -5px;
 }
 
+/* Updated Top Categories Section with Circular Images */
+.top-categories-scroll {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    margin-bottom: 16px;
+}
+
+.top-categories-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.category-card {
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+    min-width: 75px;
+    min-height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: bisque;
+}
+
+.category-card img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+
+/* Navbar Styles */
 nav {
     position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background-color: #ffffff;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keeps the navbar above other content */
+    transition: none; /* Disable any transition that might cause minimization */
 }
 
 nav ul {
@@ -98,16 +152,4 @@ nav ul li a img {
     width: 24px;
     height: 24px;
     object-fit: contain;
-}
-
-@media (min-width: 768px) {
-    .categories-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1024px) {
-    .categories-grid {
-        grid-template-columns: repeat(5, 1fr);
-    }
 }
