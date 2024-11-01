@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Poddigy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .description, .pricing-info, .subscription-options {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .pricing-info {
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 1.1em;
+            color: #2e7d32;
+        }
+        .subscription-options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .option {
+            margin: 10px 0;
+            padding: 15px;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.1em;
+            background-color: #f1f8e9;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .option:hover {
+            background-color: #c8e6c9;
+        }
+        @media (max-width: 600px) {
+            .option {
+                font-size: 1em;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Back to Home Button -->
+    <div style="text-align: center; margin: 20px;">
+        <a href="index.html" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Back to Home</a>
+    </div>
+
+    <div class="container">
+        <h1>Pricing</h1>
+
+        <div class="description">
+            <p>Poddigy operates on a <strong>Pay-Per-Minute</strong> model designed to offer flexibility and affordability.</p>
+            <p>Each user purchases credits based on the time duration they subscribe for, and credits are deducted at a rate of 1 credit per second consumed on the platform.</p>
+        </div>
+
+        <div class="pricing-info">
+            <p><strong>Pricing:</strong> Rs. 9 for a 1-hour subscription (3600 credits)</p>
+            <p><strong>Maximum Subscription:</strong> Up to 5 hours in a single transaction</p>
+        </div>
+
+        <div class="subscription-options">
+            <h2>Select Your Subscription</h2>
+            <div class="option">1 Hour - Rs. 9 (3600 credits)</div>
+            <div class="option">2 Hours - Rs. 18 (7200 credits)</div>
+            <div class="option">3 Hours - Rs. 27 (10800 credits)</div>
+            <div class="option">4 Hours - Rs. 36 (14400 credits)</div>
+            <div class="option">5 Hours - Rs. 45 (18000 credits)</div>
+        </div>
+    </div>
+</body>
+</html>
